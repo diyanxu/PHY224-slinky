@@ -1,2 +1,2 @@
-print('hello world')
-#bad
+#Q5 and Q6
+
