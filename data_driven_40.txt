@@ -1,0 +1,7 @@
+minimum position +- 0.005, maximum position +- 0.005 (May or may not be something wrong with the second row)
+1.845 1.895
+1.290 1.323
+0.976 1.000
+0.588 0.603
+0.100 0.102
+0.025 0.026
