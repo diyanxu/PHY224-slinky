@@ -1,6 +1,7 @@
 \documentclass{article}
 \usepackage{graphicx}
 \usepackage[utf8]{inputenc}
+\usepackage{amsmath}
 
 \title{Investigation into wave propagation through a slinky}
 \author{Rickie Li, Di Yan Xu}
@@ -12,7 +13,65 @@
 \newpage
 
 \section{Introduction}
+The purpose of this experiment was to understand wave propagation through the
+medium of a slinky. This was done using a slinky suspended in the air by string
+and a piston moving in sinusoidal motion. The slinky being suspended in the air
+by strings creates a pendulum system in which the length of the string is $l$
+and the weight of the pendulum is the mass of the slinky.\\
+% I got no clue what to write here maybe after its all done
+The system with this slinky is a dispersive system
+% somthing about the piston moving at omega
 
+\section{Methods}
+The following equipment was used for this experiment
+\begin{itemize}
+    \item[-] slinky
+    \item[-] motor and piston
+    \item[-] string
+    \item[-] meter stick
+    \item[-] filtering combs 
+    \item[-] camera
+\end{itemize}
+
+\newpage
+\section{Analysis}
+\subsubsection*{Find the $c_0$ of this system.}
+We know that the $c_0$ of a system is the distance travelled over time. To
+approximate the $c_0$ of this system, we used the camera to capture a video
+and determine the time it takes to get from one end and back. To do this we
+video editing software to go frame by frame to see when the wave started and
+ended. After this we determined that the wave traveled the distance of the
+slinky which is a distance of $3.78 \pm 0.01$ meters in $2.46 \pm 0.02$ seconds.
+Since the software used only allows for seconds to end in $0.00,0.03, 0.06$ we
+estimate error to be around $0.02s$. Using this data we can approximate $c_0$
+to be
+\begin{align*}
+    c_0 &= \frac{3.78m}{2.46s}\\
+    &= 1.536 \frac{m}{s}
+\end{align*}
+where the error is the following
+\begin{align*}
+    \sigma &= c_0 \sqrt{\frac{0.01}{3.78}^2 + \frac{0.02}{2.46}^2}\\
+    &= 0.013
+\end{align*}
+So we approximate $c_0 = 1.536 \pm 0.013 \frac{m}{s}$
+\subsubsection*{Deduce $\omega_0$ with the filtering combs out of the way.}
+The $\omega_0$ of a pendulum system can be determined using the following
+\begin{align*}
+    \omega_0 &= \sqrt{\frac{g}{L}}
+\end{align*}
+We measured the length of the string to be $0.875 \pm 0.005$ so we can compute
+$\omega_0$
+\begin{align*}
+    \omega_0 &= \sqrt{\frac{9.81\frac{m}{s^2}}{0.875}}\\
+    &= 3.348 s^{-1}
+\end{align*}
+where the error is 
+\begin{align*}
+    \sigma &= \omega_0 * \frac{0.005}{0.875}\\
+    &= 0.019
+\end{align*}
+So we calculated $\omega_0 = 3.348 \pm 0.019 s^{-1}$ 
 
 
 \end{document}
