@@ -20,7 +20,6 @@ data_node_freq_error = data_node_freq * freq_error_prec
 
 # getting wave number as 2pi/wavelength
 data_node_wave = (1/data_node_length) * (2*np.pi)
-print(data_node_wave)
 wave_error_prec = data_node_length_error/data_node_length
 data_node_wave_error = data_node_wave * wave_error_prec
 
