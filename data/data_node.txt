@@ -1,0 +1,4 @@
+time(s for 1 rotation (2pi), error +- 0.02) error_time wavelength(m distance between 2 nodes, error 0.005) error_length
+0.630 0.02 0.97 0.005
+0.715 0.02 1.15 0.005
+1.115 0.02 1.30 0.005
