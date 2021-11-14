@@ -123,5 +123,150 @@ equation below for values of $n = 1,2,3$
 \end{align*}
 % my brain is lagging rn should be doing important calculations rn
 
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\title{Investigation into wave propagation through a slinky}
+\author{Rickie Li, Di Yan Xu}
+\date{\today}
+\begin{document}
+
+\maketitle
+
+\newpage
+
+\section{Introduction}
+The purpose of this experiment was to understand wave propagation through the
+medium of a slinky. This was done using a slinky suspended in the air by string
+and a piston moving in sinusoidal motion. The slinky being suspended in the air
+by strings creates a pendulum system in which the length of the string is $l$
+and the weight of the pendulum is the mass of the slinky.\\
+% I got no clue what to write here maybe after its all done
+The system with this slinky is a dispersive system, that means the angular
+frequency ($\omega$) and wave number ($k$) are releated in slightly more
+complicated form than the following equations
+\begin{align}
+    \omega &= \sqrt{\omega_0^2 + c_0^2 k^2} \\
+    k^2 &= \frac{\omega^2 - \omega_0^2}{c_0^2}
+\end{align}
+Where $\omega_0$ is the angular frequency for a single pendulum of the slinky
+suspension string system and $c_0$ is, the constant wave speed of a
+non dispersive system.\\
+In this experiment we are observing different properties of wave propagation
+through the slinky by running the motor at different values of $\omega$ relative
+to the angular frequency of the slinky system.
+% somthing about the piston moving at omega
+% list some of the important -ish equations here
+
+\section{Methods}
+The following equipment was used for this experiment
+\begin{itemize}
+    \item[-] Slinky
+    \item[-]Piston and Motor
+    \item[-] String
+    \item[-] Meter Stick
+    \item[-] Filtering Combs 
+    \item[-] Camera
+\end{itemize}
+Using setup provided we drive the motor at various different $\omega$ values
+and using a camera we can find the $\omega$ by observing how long the motor
+takes to make one rotation. We also use the meter stick to measure the various
+features observed in the slinky as waves are propagated through.\\
+For experiments 1 through 6, we were asked to determine and observe properties
+of the slinky with no filter combs in the way. In experiments 7 through 11, We
+lowered the filtering combs on certian sections of the slinky effectively
+shortening the length of the string thus would increase the $\omega_0$ of the
+shortened section.
+
+\newpage
+\section{Analysis}
+\subsubsection*{Find the $c_0$ of this system.}
+We know that the $c_0$ of a system is the distance travelled over time. To
+approximate the $c_0$ of this system, we used the camera to capture a video
+and determine the time it takes to get from one end and back. To do this we
+video editing software to go frame by frame to see when the wave started and
+ended. After this we determined that the wave traveled the distance of the
+slinky which is a distance of $3.78 \pm 0.01$ meters in $2.46 \pm 0.02$ seconds.
+Since the software used only allows for seconds to end in $0.00,0.03, 0.06$ we
+estimate error to be around $0.02s$. Using this data we can approximate $c_0$
+to be
+\begin{align*}
+    c_0 &= \frac{3.78m}{2.46s}\\
+    &= 1.536 \frac{m}{s}
+\end{align*}
+where the error is the following
+\begin{align*}
+    \sigma &= c_0 \sqrt{\frac{0.01}{3.78}^2 + \frac{0.02}{2.46}^2}\\
+    &= 0.013
+\end{align*}
+So we approximate $c_0 = 1.536 \pm 0.013 \frac{m}{s}$
+\subsubsection*{Deduce $\omega_0$ with the filtering combs out of the way.}
+The $\omega_0$ of a pendulum system can be determined using the following
+\begin{align*}
+    \omega_0 &= \sqrt{\frac{g}{L}}
+\end{align*}
+We measured the length of the string to be $0.875 \pm 0.005$ so we can compute
+$\omega_0$
+\begin{align*}
+    \omega_0 &= \sqrt{\frac{9.81\frac{m}{s^2}}{0.875}}\\
+    &= 3.348 s^{-1}
+\end{align*}
+where the error is 
+\begin{align*}
+    \sigma &= \omega_0 * \frac{0.005}{0.875}\\
+    &= 0.019
+\end{align*}
+So we calculated $\omega_0 = 3.348 \pm 0.019 s^{-1}$ 
+
+
+\newpage
+\subsubsection*{Plot $\omega^2$ against $k^2$ and deduce $\omega_0^2$ and $c^2_0$
+from a linear fit}
+After collecting 3 data points and determining the $k$ we were able to generate
+the following plot\\
+% TODO: INSERT PLOT HERE
+Running a curve fit on the equaiton $\omega^2, = \omega_0^2 + c_0^2k^2$, we get
+a curve fit values of $\omega_0^2 = x$ and $c_0^2 = y$. These value aren't close
+the the calculated values we got for $\omega_0^2$ and $c_0^2$, this may be due
+to errors in data collection.
+
+
+% find resonant values
+
+\subsubsection*{Find the family of resonant $\omega$ values within range of
+values provided by driving motor}
+After testing different values provided by out driving motor, we determined that
+the resonant values within the range of values in our driving motor are around
+$x, x, x$.Looking at these values they are not integer values of some
+fundanmental angular frequency, rather they are more generally releated to the
+equation below for values of $n = 1,2,3$
+\begin{align*}
+    \omega &= \sqrt{\omega_0^2 + k_n^2c_0^2}\\
+    k_n &= \frac{n\pi}{L}
+\end{align*}
+% my brain is lagging rn should be doing important calculations rn
+
+\subsubsection*{Drive the slinky at an $\omega\ll\omega_{o}$.  
+Does the amplitude fall off exponentially with distance
+from the driven end?  Or are both exponentials in $y=y_{0}sin\omega 
+t(e^{+kx}-e^{-kx})$ required to describe it?}
+When the slinky is driven by the motor with its dial at 10\% which translates 
+to $\omega$ of approximately $0.650\pm0.00135s^{-1}$, we see in figure ??? 
+that the amplitude does seem to fall off exponentially with distance from
+the driven end ($x=0$ is at the stationary end).  It seems that having both
+exponentials is not much different from having the one exponential, but still 
+might be better at describing the amplitude given that the model using both 
+exponentials gives a $\chi_{red}^{2}$ value of approximately 0.139 which is not 
+as overfit as the model using one exponential which gives a $\chi_{red}^{2}$ 
+value of approximately 0.123.
+%part 1 of q5 stoof
+
+
+\end{document}
+
+
+
 \end{document}
 
