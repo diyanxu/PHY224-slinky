@@ -32,13 +32,14 @@ non dispersive system.\\
 In this experiment we are observing different properties of wave propagation
 through the slinky by running the motor at different values of $\omega$ relative
 to the angular frequency of the slinky system.
-% note on how various speeds have different properties like w = w0 w > w0 w < w0
+% somthing about the piston moving at omega
+% list some of the important -ish equations here
 
 \section{Methods}
 The following equipment was used for this experiment
 \begin{itemize}
     \item[-] Slinky
-    \item[-] Piston and Motor
+    \item[-]Piston and Motor
     \item[-] String
     \item[-] Meter Stick
     \item[-] Filtering Combs 
@@ -53,36 +54,9 @@ of the slinky with no filter combs in the way. In experiments 7 through 11, We
 lowered the filtering combs on certian sections of the slinky effectively
 shortening the length of the string thus would increase the $\omega_0$ of the
 shortened section.
-\newpage
-% add descriptions of experiments
-\subsection*{Experiment procedure}
-% experiment 1
-\subsubsection*{Experiment 1}
-% experiment 2
-\subsubsection*{Experiment 2}
-% experiment 3
-\subsubsection*{Experiment 3}
-% experiment 4
-\subsubsection*{Experiment 4}
-% experiment 5
-\subsubsection*{Experiment 5}
-% experiment 6
-\subsubsection*{Experiment 6}
-% experiment 7
-\subsubsection*{Experiment 7}
-% experiment 8
-\subsubsection*{Experiment 8}
-% experiment 9
-\subsubsection*{Experiment 9}
-% experiment 10
-\subsubsection*{Experiment 10}
-% experiment 11
-\subsubsection*{Experiment 11}
-
 
 \newpage
 \section{Analysis}
-% experiment 1
 \subsubsection*{Find the $c_0$ of this system.}
 We know that the $c_0$ of a system is the distance travelled over time. To
 approximate the $c_0$ of this system, we used the camera to capture a video
@@ -103,8 +77,6 @@ where the error is the following
     &= 0.013
 \end{align*}
 So we approximate $c_0 = 1.536 \pm 0.013 \frac{m}{s}$
-
-% experiment 2
 \subsubsection*{Deduce $\omega_0$ with the filtering combs out of the way.}
 The $\omega_0$ of a pendulum system can be determined using the following
 \begin{align*}
@@ -125,7 +97,6 @@ So we calculated $\omega_0 = 3.348 \pm 0.019 s^{-1}$
 
 
 \newpage
-% experiment 3
 \subsubsection*{Plot $\omega^2$ against $k^2$ and deduce $\omega_0^2$ and $c^2_0$
 from a linear fit}
 After collecting 3 data points and determining the $k$ we were able to generate
@@ -137,7 +108,8 @@ the the calculated values we got for $\omega_0^2$ and $c_0^2$, this may be due
 to errors in data collection.
 
 
-% experiment 4
+% find resonant values
+
 \subsubsection*{Find the family of resonant $\omega$ values within range of
 values provided by driving motor}
 After testing different values provided by out driving motor, we determined that
@@ -149,23 +121,21 @@ equation below for values of $n = 1,2,3$
     \omega &= \sqrt{\omega_0^2 + k_n^2c_0^2}\\
     k_n &= \frac{n\pi}{L}
 \end{align*}
+% my brain is lagging rn should be doing important calculations rn
 
-% experiment 5
 \subsubsection*{Drive the slinky at an $\omega\ll\omega_{o}$.  
 Does the amplitude fall off exponentially with distance
 from the driven end?  Or are both exponentials in $y=y_{0}sin\omega 
 t(e^{+kx}-e^{-kx})$ required to describe it?}
 When the slinky is driven by the motor with its dial at 10\% which translates 
-to $\omega$ of approximately $0.650\pm0.00135s^{-1}$, we see in figure ??? 
+to $\omega$ of approximately $0.650\pm0.001s^{-1}$, we see in figure ??? 
 that the amplitude does seem to fall off exponentially with distance from
 the driven end ($x=0$ is at the stationary end).  It seems that having both
-exponentials is not much different from having the one exponential, but still 
-might be better at describing the amplitude given that the model using both 
-exponentials gives a $\chi_{red}^{2}$ value of approximately 0.0440 which is not 
-as overfit as the model using one exponential which gives a $\chi_{red}^{2}$ 
-value of approximately 0.0427.
+exponentials is not much different from having the one exponential, where 
+using both exponentials gives a $\chi_{red}^{2}$ value of approximately 
+0.0440 while one exponential gives a $\chi_{red}^{2}$ value of approximately 
+0.0427.
 
-% experiment 6
 \subsubsection*{Try the extreme of $\omega\rightarrow0$ by merely displacing 
 and holding one end stationary and noting the displacements $y$ of the coils 
 down the apparatus.}
@@ -174,29 +144,51 @@ when the driven end is at its maximum and minimum position, we get the graph in
 figure ???.  Like in the previous part, it seems that both one and two 
 exponentials can describe the amplitude and are not much different.  The 
 $\chi_{red}^{2}$ corresponding to the one exponential model is 0.123 and the
-$\chi_{red}^{2}$ for the two exponential model is 0.139 which is less overfit.
+$\chi_{red}^{2}$ for the two exponential model is 0.139.
 
-\subsubsection*{Drive the slinky at $\omega=\omega_{0}$.  Collect  some  data  and perform  a  linear  fit  to  test  how  accurately  the  linear  decay  law  of  equation  (18)  isobeyed.  Discrepancies will indicate imperfections of suspension, or non-uniformities inthe slinky, or perhaps other dissipative effects.  Can you distinguish between them?}
+\subsubsection*{Drive the slinky at $\omega=\omega_{0}$.  Collect  some  data  and 
+perform a linear fit to test how accurately the linear decay law, 
+$y=y_{d}\frac{x}{L}\sin{\omega t}$, is obeyed.  Discrepancies will indicate 
+imperfections of suspension, or non-uniformities in the slinky, or perhaps other 
+dissipative effects.  Can you distinguish between them?}
+After collecting the data and performing a linear fit to test the linear decay law, 
+we see in figure ??? that the linear decay law appears to be obeyed.
+Regarding discrepancies, we noticed that the slinky did not make a straight line
+from the driven end to the stationary end and also did not line up with the 
+driven end.  The slinky was also somewhat stretched out away from the driven end.
 
-% experiment 7
-\subsubsection*{Question 7}
+\subsubsection*{Let $\omega_{l}$ be the $\omega_{0}$ for the original long 
+strings and $\omega_{s}$ be the $\omega_{0}$ for the short strings, with 
+$\omega_{l}<\omega_{s}$.}
+We measured that the length of the combed strings were approximately 
+$0.210\pm0.005m$.  Using this value we find that, 
+\begin{align*}
+    \omega_{s}&=\sqrt{\frac{9.81\frac{m}{s^2}}{0.210m}}\\
+    &=6.84s^{-1}
+\end{align*}
+Where $\omega_{s}$ is the angular frequency for a single pendulum of the slinky
+system in the short section.  The error is,
+\begin{align*}
+    \sigma_{s}&=\omega_{s}\frac{\sigma_{l_{s}}}{2l_{s}}\\
+    &=6.84s^{-1}\frac{0.005m}{0.420m}\\
+    &=0.08s^{-1}
+\end{align*}
+Where $\sigma_{l_{s}}$ is the error in the length of the short strings, and 
+$l_{s}$ is the length of the short strings.  So, we calculated 
+$\omega_{s}=6.84\pm0.08s^{-1}$.
 
-
-% experiment 8
-\subsubsection*{Question 8}
-
-% experiment 9
-\subsubsection*{Question 9}
-
-% experiment 10
-\subsubsection*{Question 10}
-
-% experiment 11
-\subsubsection*{Question 11}
-
-\newpage
-\section{Conclusion}
-
+\subsubsection*{Try lowering combs number 2 and number 3, away from the driven 
+end.  Now you can establish a resonance belonging essentially to section number 1, 
+nearest the drive.}
+Resonance in section number 1 seems to have been established at around 90\% on 
+the motor's dial which translates to an $\omega$ of approximately 
+$8.27\pm0.2s^{-1}$.  We found this by first using the equation, 
+\[\omega=\sqrt{\omega_{0}^2+\frac{c_{0}^2\pi^2}{L_l^2}}\]
+With our previously acquired value of $\omega_{0}$ and $c_{0}$ as well as the
+length of the uncombed section, $L_l$, which was approximately $0.590\pm0.005m$
+in order to get an estimate for around where we might get resonance in the 
+section number 1.
 
 
 \end{document}
+
