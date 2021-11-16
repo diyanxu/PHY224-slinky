@@ -1,4 +1,4 @@
-minimum position +- 0.005, maximum position +- 0.005(Note that this data was taken by recording the position of the coils of the slinky at rest and then displacing the driven end)
+minimum position +- 0.005, maximum position +- 0.005
 1.845 1.895
 1.680 1.720
 1.590 1.620
