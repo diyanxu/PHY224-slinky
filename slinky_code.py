@@ -103,6 +103,7 @@ plt.title("Position from Fixed End vs Amplitude with ω approaching 0")
 plt.xlabel("Position from Fixed End (m)")
 plt.ylabel("Amplitude (m)")
 plt.legend()
+plt.savefig('driven_0.png')
 
 plt.figure(1)
 plt.errorbar(data_amplitude_10[:,0], data_amplitude_10[:,1],
@@ -118,6 +119,7 @@ plt.title("Position from Fixed End vs Amplitude with Motor Driven at 10%" +
 plt.xlabel("Position from Fixed End (m)")
 plt.ylabel("Amplitude (m)")
 plt.legend()
+plt.savefig('driven_10.png')
 
 plt.figure(2)
 plt.errorbar(data_amplitude_40[:,0], data_amplitude_40[:,1],
@@ -129,6 +131,7 @@ plt.title("Position from Fixed End vs Amplitude with Motor Driven at 40%" +
 plt.xlabel("Position from Fixed End (m)")
 plt.ylabel("Amplitude (m)")
 plt.legend()
+plt.savefig('driven_40.png')
 
 #calculating reduced chi squared
 chisq_red1_0 = reduced_chisquared(data_amplitude_0[:,1], model_one_exp_0, 
@@ -136,11 +139,11 @@ chisq_red1_0 = reduced_chisquared(data_amplitude_0[:,1], model_one_exp_0,
 chisq_red2_0 = reduced_chisquared(data_amplitude_0[:,1], model_two_exp_0, 
                                   error_amplitude_0,  2)
 chisq_red1_10 = reduced_chisquared(data_amplitude_10[:,1], model_one_exp_10, 
-                                  error_amplitude_10,  2)
+                                   error_amplitude_10,  2)
 chisq_red2_10 = reduced_chisquared(data_amplitude_10[:,1], model_two_exp_10, 
-                                  error_amplitude_10,  2)
+                                   error_amplitude_10,  2)
 chisq_red_linear = reduced_chisquared(data_amplitude_40[:,1], model_linear, 
-                                  error_amplitude_40,  1)
+                                      error_amplitude_40,  1)
 print(chisq_red1_0)
 print(chisq_red2_0)
 print(chisq_red1_10)
@@ -163,7 +166,6 @@ data_node_wave = (1/data_node_length) * (2*np.pi)
 wave_error_prec = data_node_length_error/data_node_length
 data_node_wave_error = data_node_wave * wave_error_prec
 
-#TODO: fix error calc here
 # squaring data, doubling error
 data_node_freq = data_node_freq**2
 data_node_freq_error = data_node_freq*2*freq_error_prec
@@ -180,6 +182,7 @@ plt.errorbar(data_node_wave, data_node_freq, yerr=data_node_freq_error,
 plt.plot(data_node_wave, q3_model(data_node_wave, *popt_q3), label='model')
 plt.title("Angular frequency squared vs. Wavenumber squared")
 plt.legend()
+plt.savefig('q3.png')
 
 print(popt_q3)
 
