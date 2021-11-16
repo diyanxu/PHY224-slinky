@@ -56,6 +56,63 @@ shortening the length of the string thus would increase the $\omega_0$ of the
 shortened section.
 
 \newpage
+\subsection*{Experiments}
+
+\subsubsection*{Experiment 1}
+Experiment one consists of measuring the amount of time it takes for a wave to
+travel 2 lengths of the slinky, this is achieved by recording the wave being
+sent through the slinky and measuring the amount of time it takes to return.
+
+\subsubsection*{Experiment 2}
+Experiment two consists of determining the angular frequency of the slinky as a
+pendulum, this is achieved by measuring the length of the string suspending the
+slinky.
+
+\subsubsection*{Experiment 3}
+Experiment three consists of plotting $\omega^2$ with $k^2$, this is achieved by
+running the piston at various speeds of $\omega$ then measuring the distance
+between nodes. The experiment also asks to run a curve fit and determine
+$\omega_0^2$ and $c_0^2$.
+
+\subsubsection*{Experiment 4}
+Experiment four consists of testing different values of resonant $\omega$ values
+and determining if they are integer factors of some fundamental angular
+frequency or if they are better modeled with the equation below.
+
+\subsubsection*{Experiment 5}
+Experiment five consists of driving the piston at $\omega << \omega_0$ and
+taking rough approximations of the minimum and maximum positions of certain
+coils along the slinky. The second part consists of diving the piston at
+$\omega \rightarrow 0$ with the piston at a maximum and minimum and gathering
+the same data.
+
+\subsubsection*{Experiment 6}
+Experiment six consists of driving the piston at $\omega = \omega_0$ and
+repeating the data gathering in the first part of experiment 5.
+
+\subsubsection*{Experiment 7}
+Experiment seven consists of dropping the filtering combs onto the slinky and
+computing the new $\omega_s$ for the shorter lengths of strings.
+
+\subsubsection*{Experiment 8}
+Experiment eight consists of lower filter comb numbers 2 and 3, then driving the
+piston to try and determine the resonance belonging to just section 1.
+
+\subsubsection*{Experiment 9}
+Experiment nine consists of driving the piston at the same speed as in
+experiment 8 and lowering filtering combs 1 and 2 to see if the wave can tunnel
+into section 3 of the slinky. The experiment also asks to observe if section 3
+exhibit larger amplitudes than sections 1 and 2.
+
+\subsubsection*{Experiment 10}
+Experiment ten consists of doing the same as experiment 8 then suddenly turning
+off the motor and raising filtering comb 3 at the same time. The experiment then
+wants to know if it is possible to determine the beat period of the tunneling.
+
+\subsubsection*{Experiment 11}
+Experiment eleven consists of driving the piston 10$\%$ faster and 10$\%$ slower
+than one of the resonance speeds and observing the properties of the slinky.
+
 \section{Analysis}
 \subsubsection*{Find the $c_0$ of this system.}
 We know that the $c_0$ of a system is the distance travelled over time. To
@@ -71,12 +128,9 @@ to be
     c_0 &= \frac{3.78m}{2.46s}\\
     &= 1.536 \frac{m}{s}
 \end{align*}
-where the error is the following
-\begin{align*}
-    \sigma &= c_0 \sqrt{\frac{0.01}{3.78}^2 + \frac{0.02}{2.46}^2}\\
-    &= 0.013
-\end{align*}
 So we approximate $c_0 = 1.536 \pm 0.013 \frac{m}{s}$
+\newpage
+
 \subsubsection*{Deduce $\omega_0$ with the filtering combs out of the way.}
 The $\omega_0$ of a pendulum system can be determined using the following
 \begin{align*}
@@ -88,47 +142,46 @@ $\omega_0$
     \omega_0 &= \sqrt{\frac{9.81\frac{m}{s^2}}{0.875}}\\
     &= 3.348 s^{-1}
 \end{align*}
-where the error is 
-\begin{align*}
-    \sigma &= \omega_0 * \frac{0.005}{0.875}\\
-    &= 0.019
-\end{align*}
-So we calculated $\omega_0 = 3.348 \pm 0.019 s^{-1}$ 
+So we calculated $\omega_0 = 3.348 \pm 0.107 s^{-1}$ 
 
-
-\newpage
 \subsubsection*{Plot $\omega^2$ against $k^2$ and deduce $\omega_0^2$ and $c^2_0$
 from a linear fit}
 After collecting 3 data points and determining the $k$ we were able to generate
-the following plot\\
-% TODO: INSERT PLOT HERE
+the following plot (figure 1)\\
+\begin{figure}[hp!]
+    \centering
+    \includegraphics[scale=0.6]{graphs/q3.png}
+    \caption{}
+\end{figure}
 Running a curve fit on the equaiton $\omega^2, = \omega_0^2 + c_0^2k^2$, we get
-a curve fit values of $\omega_0^2 = x$ and $c_0^2 = y$. These value aren't close
-the the calculated values we got for $\omega_0^2$ and $c_0^2$, this may be due
+a curve fit values of $\omega_0^2 = 4.27$ and $c_0^2 = -67.42$. These value
+aren't close (one is even negative)
+to the calculated values we got for $\omega_0^2$ and $c_0^2$, this may be due
 to errors in data collection.
-
-
-% find resonant values
+\newpage
 
 \subsubsection*{Find the family of resonant $\omega$ values within range of
 values provided by driving motor}
 After testing different values provided by out driving motor, we determined that
 the resonant values within the range of values in our driving motor are around
-$x, x, x$.Looking at these values they are not integer values of some
+$4.05 \pm 0.02s^{-1}, 5.98 \pm 0.11 s^{-1}, 7.85 \pm 0.19s^{-1}$.Looking at
+these values they are not integer values of some
 fundanmental angular frequency, rather they are more generally releated to the
 equation below for values of $n = 1,2,3$
 \begin{align*}
     \omega &= \sqrt{\omega_0^2 + k_n^2c_0^2}\\
     k_n &= \frac{n\pi}{L}
 \end{align*}
-% my brain is lagging rn should be doing important calculations rn
+If we were to use our values for $c_0 = 1.536 \pm 0.013 \frac{m}{s}, w_0 =
+3.348\pm0.019 s^{-1}$ and $L = 1.89\pm 0.005m$, we would get for $n = 1, 2, 3$,
+$\omega = 4.21 \pm 0.02s^{-1}, 6.11 \pm 0.039s^{-1}, 8.35 \pm 0.062s^{-1}$.
 
 \subsubsection*{Drive the slinky at an $\omega\ll\omega_{o}$.  
 Does the amplitude fall off exponentially with distance
 from the driven end?  Or are both exponentials in $y=y_{0}sin\omega 
 t(e^{+kx}-e^{-kx})$ required to describe it?}
 When the slinky is driven by the motor with its dial at 10\% which translates 
-to $\omega$ of approximately $0.650\pm0.001s^{-1}$, we see in figure ??? 
+to $\omega$ of approximately $0.650\pm0.001s^{-1}$, we see in figure 2 
 that the amplitude does seem to fall off exponentially with distance from
 the driven end ($x=0$ is at the stationary end).  It seems that having both
 exponentials is not much different from having the one exponential, where 
@@ -141,18 +194,30 @@ and holding one end stationary and noting the displacements $y$ of the coils
 down the apparatus.}
 Using the data obtained by recording the positions of coils down the apparatus 
 when the driven end is at its maximum and minimum position, we get the graph in
-figure ???.  Like in the previous part, it seems that both one and two 
+figure 3  Like in the previous part, it seems that both one and two 
 exponentials can describe the amplitude and are not much different.  The 
 $\chi_{red}^{2}$ corresponding to the one exponential model is 0.123 and the
 $\chi_{red}^{2}$ for the two exponential model is 0.139.
 
+\begin{figure}[hp!]
+    \centering
+    \includegraphics[scale=0.45]{graphs/driven_10.png}
+    \caption{}
+    \centering
+    \includegraphics[scale=0.45]{graphs/driven_0.png}
+    \caption{}
+    \centering
+    \includegraphics[scale=0.45]{graphs/driven_40.png}
+    \caption{}
+\end{figure}
+\newpage
 \subsubsection*{Drive the slinky at $\omega=\omega_{0}$.  Collect  some  data  and 
 perform a linear fit to test how accurately the linear decay law, 
 $y=y_{d}\frac{x}{L}\sin{\omega t}$, is obeyed.  Discrepancies will indicate 
 imperfections of suspension, or non-uniformities in the slinky, or perhaps other 
 dissipative effects.  Can you distinguish between them?}
 After collecting the data and performing a linear fit to test the linear decay law, 
-we see in figure ??? that the linear decay law appears to be obeyed.
+we see in figure 4 that the linear decay law appears to be obeyed.
 Regarding discrepancies, we noticed that the slinky did not make a straight line
 from the driven end to the stationary end and also did not line up with the 
 driven end.  The slinky was also somewhat stretched out away from the driven end.
@@ -188,6 +253,41 @@ With our previously acquired value of $\omega_{0}$ and $c_{0}$ as well as the
 length of the uncombed section, $L_l$, which was approximately $0.590\pm0.005m$
 in order to get an estimate for around where we might get resonance in the 
 section number 1.
+\newpage
+\subsubsection*{Perform experiment 9 and observe the results, does section 3
+exhibit resonance, does section 3 have a larger amplitude than sections 1 and 2
+despite being further from the driven end?}
+Yes, section 3 does seem to exhibit resonance with amplitudes longer than
+sections 1 and 2 despite being further away from the driven end. One possible
+reason for this is that sections 1 and 2 require a higher $\omega$ to experience
+resonance since the $\omega$ of the driven piston is lower than the $\omega_s$
+of the shorter sections but enough for the longer section, the wave is able to
+tunnel through section 1 and 2 without causing much movement and go into section
+3 allowing it to experience resonance.
+
+\subsubsection*{Perform experiment 10 and observe the results, can you determine
+the beat period of tunneling.}
+It would appear that the beat period of tunneling is the period of any section
+of the coil in section 2 since it appears to be moving back and forth. It would
+be possible to measure the period however we are running out of time.
+
+\section{Conclusion}
+The purpose of this lab was to conduct several experiments to observe multiple
+properties of wave propagation through a slinky medium. The slinky was set up in
+a way where we were able to observe wave behaviors when driving a piston at
+various speeds.\\
+Some of the notable things we determined in this lab are the following\
+\begin{itemize}
+    \item[-] Approximate the speed of waves through a slinky to be $c_0 = 1.536
+    \pm 0.013$
+    \item[-] Found that family of resonant $\omega$ values are not integer
+    multiples rather they can be modeled using the equation
+    $\omega = \sqrt{\omega_0^2 + k_n^2c_0^2}$ to be better
+    \item[-]The amplitude of the wave appears to fall off exponentially with
+    the distance away from the driven end.
+    \item[-] Waves are able to tunnel through sections that are not resonant
+    into areas that are resonant
+\end{itemize}
 
 
 \end{document}
